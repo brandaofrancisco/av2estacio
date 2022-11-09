@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 2</title>
+    </head>
+    <body>
+        <h1>Exercicio 2</h1>
+        <button onclick="fabrica()">Iniciar</button>
+        <script>
+            function fabrica()
+            {
+                let Hora = parseInt(prompt("Digite a hora."));
+                let Minutos = parseInt(prompt("Digite os minutos."));
+                let Segundos = parseInt(prompt("Digite os segundos"));
+                let totalhoras = parseInt((Hora)*3600);
+                let totalminutos = parseInt((Minutos)*60);
+                
+
+                alert("Valores em segundos: " + (totalhoras + totalminutos + Segundos));
+            }
+        </script>
+    </body>
+</html>

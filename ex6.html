@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <h1>Exercicio 6</h1>
+    <button onclick="dolar()">Iniciar</button>
+    <script>
+        function dolar()
+        {
+        let Valordolar = parseInt(prompt("Digite a cotação do dólar:"));
+        let trocadolar = parseInt(prompt("Digite quantos doláres deseja trocar:"));
+
+        let totalcambio = (Valordolar * trocadolar);
+        
+
+        alert("O valor total de dólares em Reais é de: R$" + totalcambio);
+        }
+    </script>
+</body>
+</html>

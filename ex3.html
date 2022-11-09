@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 3</title>
+    </head>
+    <body>
+        <h1>Exercicio 3</h1>
+        <button onclick="loja()">Iniciar</button>
+        <script>
+            function loja()
+            {
+                let nomeLoja = prompt("Digite o nome da loja.");
+                let m1 = parseInt(prompt("Digite o total do mês de Janeiro"));
+                let m2 = parseInt(prompt("Digite o total do mês de Fevereiro"));
+                let m3 = parseInt(prompt("Digite o total do mês de Março"));
+                let m4 = parseInt(prompt("Digite o total do mês de Abril"));
+                let m5 = parseInt(prompt("Digite o total do mês de Maio"));
+                let m6 = parseInt(prompt("Digite o total do mês de Junho"));
+                let m7 = parseInt(prompt("Digite o total do mês de Julho"));
+                let m8 = parseInt(prompt("Digite o total do mês de Agosto"));
+                let m9 = parseInt(prompt("Digite o total do mês de Setembro"));
+                let m10 = parseInt(prompt("Digite o total do mês de Outubro"));
+                let m11 = parseInt(prompt("Digite o total do mês de Novembro"));
+                let m12 = parseInt(prompt("Digite o total do mês de Dezembro"));
+
+                let sem1 = m1+m2+m3+m4+m5+m6;
+                let sem2 = m7+m8+m9+m10+m11+m12;
+
+                alert("Total de Vendas do Semestre 1: " + sem1 + ". Total de Vendas do Semestre 2: " + sem2);
+                
+            }
+        </script>
+    </body>
+</html>

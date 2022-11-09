@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 5</title>
+    </head>
+    <body>
+        <h1>Exercicio 5</h1>
+        <button onclick="lanchonete()">Iniciar</button>
+        <script>
+            function lanchonete() {
+
+                let nome = prompt("Digite seu nome:");
+                
+                let quantHotDog = parseFloat(prompt("Digite a quantidade de HotDogs (R$1,00):"));
+                let valorHotDog = parseFloat(1.00);
+
+                let quantHamb = parseFloat(prompt("Digite a quantidade de Hamburger (R$1,30):"));
+                let valorHamb = parseFloat(1.30);
+
+                let quantCheese = parseFloat(prompt("Digite a quantidade de Cheeseburger (R$1,50):"));
+                let valorCheese = parseFloat(1.50);
+
+                let quantRefri = parseFloat(prompt("Digite a quantidade de Refrigerante (R$1,00):"));
+                let valorRefri = parseFloat(1.00);
+
+                let quantBatata = parseFloat(prompt("Digite a quantidade de Batatas Frita (R$0,80):"));
+                let valorBatata = parseFloat(0.80);
+
+                let valorTotal = (quantHotDog * valorHotDog) + (quantHamb * valorHamb) + (quantCheese * valorCheese) + (quantRefri * valorRefri) + (quantBatata * valorBatata);
+
+
+
+                alert("Olá " + nome + ", o valor total de sua compra é: R$" + valorTotal);
+            } 
+        </script>
+    </body>
+</html>

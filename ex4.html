@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 4</title>
+    </head>
+    <body>
+        <h1>Exercicio 4</h1>
+        <button onclick="banco()">Iniciar</button>
+        <script>
+            function banco() {
+                let nome = prompt("Digite o seu nome:");
+                let nomeBanco = prompt("Digite o nome do banco");
+                let numeroConta = prompt("Digite o número da conta");
+                let debitar = parseInt(prompt("Digite o total a debitar"));
+                let creditar = parseInt(prompt("Digite o total a creditar"));
+                let limite = parseInt(prompt("Digite o limite da conta"));
+                let saldoAtual = parseInt(prompt("Digite o saldo disponível"));
+
+                let disponível = (saldoAtual + creditar + limite) - debitar;
+
+                alert("Olá " + nome + ", do Banco " + nomeBanco + " conta "+ numeroConta + ", Voce possui o saldo de R$: " + disponível.toFixed(2));
+            }
+        </script>
+    </body>
+</html>

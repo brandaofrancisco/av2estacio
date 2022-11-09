@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 1</title>
+    </head>
+    <body>
+        <h1>Exercicio 1</h1>
+        <button onclick="aluno()">Iniciar</button>
+        <script>
+            function aluno() {
+                let nome = prompt("Digite o seu nome:");
+                let nota1 = prompt("Digite a 1ª nota");
+                let nota2 = prompt("Digite a 2ª nota");
+                let nota3 = prompt("Digite a 3ª nota");
+                let disc = prompt("Digite o nome da disciplina");
+                let turma = prompt("Digite o n° da turma");
+    
+                let media = (Number(nota1) + Number(nota2) + Number(nota3)) / 3;
+
+                alert("Olá " + nome + ", da turma " + turma + " de "+ disc + ", com as notas: " + nota1 + ", " + nota2 + " e " + nota3 + ". Sua média é: " + media.toFixed(2));
+
+            }
+        </script>
+    </body>
+</html>

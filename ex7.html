@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 7</title>
+    </head>
+    <body>
+        <h1>Exercicio 7</h1>
+        <button onclick="fabrica()">Iniciar</button>
+        <script>
+            function fabrica() {
+
+                let nome = prompt("Digite o nome do produto:");
+                let custFab = parseFloat(prompt("Digite o custo de fábrica do produto:"));
+                let quantImp = parseFloat(prompt("Digite a % de impostos sobre o produto:"));
+                let quantDist = parseFloat(prompt("Digite a % do distribuidor sobre o produto:"));
+
+                let valorFinal = custFab + ((custFab * quantImp) / 100) + ((custFab * quantDist) / 100);
+
+                alert("O produto " + nome + " possui o valor total de R$" + valorFinal);
+            } 
+        </script>
+    </body>
+</html>
